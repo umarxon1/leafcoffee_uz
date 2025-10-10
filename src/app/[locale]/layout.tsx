@@ -4,7 +4,6 @@ import "../globals.css";
 import Header from "@/components/Header/header";
 import Footer from "@/components/Footer/footer";
 import {NextIntlClientProvider} from 'next-intl';
-import {ReactNode} from 'react';
 import {notFound} from 'next/navigation';
 
 type Props = {
@@ -37,7 +36,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   let messages;
   try {
     messages = (await import(`@/i18n/${locale}.json`)).default;
-  } catch (error) {
+  } catch {
     notFound();
   }
   return (

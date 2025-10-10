@@ -1,12 +1,9 @@
-import { Avatar } from "antd";
 import { StarFilled, UserOutlined } from "@ant-design/icons";
 import { Testimonial } from "@/types/type";
-import { useLocale, useTranslations } from 'next-intl';
 
 
 
 export default function TestimonialCard({ review }: { review: Testimonial }) {
-  const t = useTranslations('header');
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center h-full">

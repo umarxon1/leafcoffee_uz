@@ -7,7 +7,7 @@ type YandexMapProps = {
 };
 
 const YandexMap = ({ center }: YandexMapProps) => {
-  const mapRef = useRef<any>(null);
+  const mapRef = useRef<ymaps.Map | null>(null);
 
   const branches = [
     {
@@ -31,13 +31,14 @@ const YandexMap = ({ center }: YandexMapProps) => {
   const defaultCenter: [number, number] = [40.84, 70.50];
   const defaultZoom = 7;
 
-  useEffect(() => {
-    if (mapRef.current && center) {
-      mapRef.current.setCenter(center, 15, { duration: 300 });
-    } else if (mapRef.current && !center) {
-      mapRef.current.setCenter(defaultCenter, defaultZoom);
-    }
-  }, [center]);
+ useEffect(() => {
+  if (mapRef.current && center) {
+    mapRef.current.setCenter(center, 15, { duration: 300 });
+  } else if (mapRef.current && !center) {
+    mapRef.current.setCenter(defaultCenter, defaultZoom);
+  }
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, [center]);
 
   return (
     <YMaps query={{ lang: "en_RU" }}>

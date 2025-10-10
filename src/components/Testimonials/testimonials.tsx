@@ -1,5 +1,4 @@
 import { Carousel } from "antd";
-import { testimonials } from "@/data/db";
 import TestimonialCard from "./components/testimonialsCard";
 import {  getTranslations } from 'next-intl/server';
 import { LocalType } from "@/types/type";
@@ -11,15 +10,6 @@ export default async function Testimonials({ locale }: LocalType) {
   const t = await getTranslations({ locale, namespace: "reviews" });
 
   const items = t.raw("items") as { name: string; city: string; text: string }[];
-
-  const contentStyle: React.CSSProperties = {
-  margin: 0,
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
 
   return (
     <section className="bg-[#f9f6f1] py-16">

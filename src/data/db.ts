@@ -1,5 +1,5 @@
 import { Product } from "@/types/type";
-import { Testimonial } from "@/types/type";
+
 
 
 export const products: Product[] = [
@@ -67,27 +67,3 @@ export const products: Product[] = [
   },
 ];
 
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: "Anastasia",
-    city: "Tashkent",
-    text: "The coffee is simply delightful! The atmosphere is very cozy.",
-    img: "https://i.pravatar.cc/150?img=32",
-  },
-  {
-    id: 2,
-    name: "Jamshid",
-    city: "Kokand",
-    text: "The best desserts I’ve ever tried are from them.",
-    img: "https://i.pravatar.cc/150?img=12",
-  },
-  {
-    id: 3,
-    name: "Leila",
-    city: "Guest",
-    text: "I really like their cappuccino. The taste is natural and fresh.",
-    img: "https://i.pravatar.cc/150?img=47",
-  },
-];

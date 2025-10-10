@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { Route } from "next";
+import type { MenuProps } from "antd";
 
 const Navbar = () => {
   const t = useTranslations("header");
@@ -19,8 +21,8 @@ const Navbar = () => {
   // 🔁 Til o‘zgartirish funksiyasi
   const handleLangChange = (value: string) => {
     startTransition(() => {
-      const newPath = `/${value}${pathname.substring(3)}`;
-      router.push(newPath as any);
+      const newPath = `/${value}${pathname.substring(3)}` as unknown as Route;
+      router.push(newPath );
     });
   };
 
@@ -31,9 +33,9 @@ const Navbar = () => {
     { key: "uz", label: "O‘zbekcha" },
   ];
 
-  const handleMenuClick = (e: any) => {
-    handleLangChange(e.key);
-  };
+ const handleMenuClick: MenuProps["onClick"] = (e) => {
+  handleLangChange(e.key);
+};
 
   // 🔽 Scroll & Drawer
   const [scrolled, setScrolled] = useState(false);
