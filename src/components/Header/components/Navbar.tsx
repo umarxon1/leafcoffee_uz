@@ -18,7 +18,6 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
-  // 🔁 Til o‘zgartirish funksiyasi
   const handleLangChange = (value: string) => {
     startTransition(() => {
       const newPath = `/${value}${pathname.substring(3)}` as unknown as Route;
@@ -26,7 +25,6 @@ const Navbar = () => {
     });
   };
 
-  // 🌐 Dropdown menyu elementlari
   const items = [
     { key: "en", label: "English" },
     { key: "ru", label: "Русский" },
@@ -37,7 +35,6 @@ const Navbar = () => {
   handleLangChange(e.key);
 };
 
-  // 🔽 Scroll & Drawer
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const onClose = () => setOpen(false);
@@ -62,7 +59,6 @@ const Navbar = () => {
       >
         <header className="container">
           <nav className="p-5 flex items-center justify-between">
-            {/* --- LEFT --- */}
             <div className="flex items-center gap-25 max-xl1:gap-10">
               <Link href={`/${locale}`}>
                 <Image
@@ -118,10 +114,8 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* --- RIGHT --- */}
             <div className="flex items-center gap-10 max-xl:gap-10 max-sm1:gap-5 max-sm3:gap-0">
               
-              {/* 🌍 LG ekranlarda SELECT (til nomi bilan) */}
               <div className="hidden md:block">
                 <Select
                   value={locale}
@@ -137,7 +131,6 @@ const Navbar = () => {
                 />
               </div>
 
-              {/* 🌐 MD va kichik ekranlarda GLOBUS */}
               <div className="block md:hidden">
                 <Dropdown
                   menu={{
@@ -163,7 +156,6 @@ const Navbar = () => {
                 </Dropdown>
               </div>
 
-              {/* 📞 Telefon raqami */}
               <div className="flex items-center flex-col max-lg1:hidden">
                 <a
                   href="tel:+998885770077"
@@ -182,7 +174,6 @@ const Navbar = () => {
                 </span>
               </div>
 
-              {/* ☰ Mobil menyu */}
               <div className="hidden max-md1:inline">
                 <Button
                   type="text"

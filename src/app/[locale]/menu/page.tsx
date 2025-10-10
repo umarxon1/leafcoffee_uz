@@ -14,7 +14,7 @@ const page = () => {
         
       />
       </div>
-       <div className='flex flex-col items-center gap-20 mb-[150px] mt-[50px]'>
+       <div className='flex flex-col items-center gap-10 mb-[70px] mt-[30px]'>
               <h1 className='text-[32px] max-md:text-[26px] max-sm:text-[20px]'>Menu</h1>
           <div className='container grid grid-cols-4 gap-8 max-lg1:grid-cols-3 max-md:grid-cols-2 max-sm1:gap-4'>
               {products.map((el,i)=> {

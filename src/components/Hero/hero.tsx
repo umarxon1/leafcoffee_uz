@@ -23,7 +23,6 @@ export default async function Hero({ locale }: LocalType) {
           <button className="px-6 py-3 bg-white text-black rounded-lg hover:bg-[#b5d8d2]">
             <Link href={`/${locale}/menu` as unknown as Route}>{t("buttons.view_menu")}</Link>
           </button>
-          
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ import {notFound} from 'next/navigation';
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // ✅ yangi talab
+  params: Promise<{ locale: string }>; 
 };
 
 export function generateStaticParams() {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const {locale}  = await params; // ✅ Next.js 15 talab qiladi
+  const {locale}  = await params; 
 
   let messages;
   try {
