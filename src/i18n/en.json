@@ -1,0 +1,114 @@
+{
+  "header": {
+    "menu": "Menu",
+    "about_us": "About Us",
+    "restaurants": "Restaurants",
+    "contacts": "Contacts",
+    "every_day":"Every day"
+    
+  },
+  "hero": {
+    "title": "Coffee shop",
+    "subtitle": "Your Coffee Spot",
+    "description": "Premium Coffee & Desserts, made with love",
+    "buttons": {
+      "view_menu": "View Menu",
+      "order_now": "Order Now"
+    }
+  },
+  "experience": {
+    "title": "Not just coffee, it’s an experience",
+    "description": "Feel the cozy vibe, watch our baristas at work, and enjoy freshly brewed coffee.",
+    "tags": ["Barista", "Interior", "Coffee crowd"]
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "subtitle": "What our guests say about us",
+    "items": [
+      {
+        "name": "Anastasia",
+        "city": "Tashkent",
+        "text": "The coffee is simply delightful! The atmosphere is very cozy."
+      },
+      {
+        "name": "Jamshid",
+        "city": "Kokand",
+        "text": "The best desserts I’ve ever tried are from them."
+      },
+      {
+        "name": "Leila",
+        "city": "Guest",
+        "text": "I really like their cappuccino. The taste is natural and fresh."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "experience": "3+ years of experience",
+    "description": "We believe that a cup of good coffee and a delicious dessert can bring joy and inspiration for the whole day. That’s why we prepare every dish and drink with love, using only fresh and natural ingredients.",
+    "Mission": "Our Mission",
+    "mission": "We prepare coffee and desserts only from carefully selected ingredients.",
+    "Team": "Our Team",
+    "team": "Experienced baristas and pastry chefs who truly love their craft.",
+    "Values": "Our Values",
+    "values": "Quality, coziness, and care for every guest."
+  },
+  "restaurants": {
+    "title": "Restaurants",
+    "question": "Do you have any questions? Write to us or visit our coffee shop.",
+    "address": "Address",
+    "phones": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "locations": [
+      "Kokand, Shokhrukhobod Street",
+      "Kokand, Turon Street, 7",
+      "Pereval, A373 Highway",
+      "Tashkent, Shaykhantakhur district, Kukcha, Small Ring Road, 56"
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phonelabel":"Phone number:",
+    "hours": "Working Hours",
+    "locations": [
+      {
+        "id": 1,
+        "name": "\"Leafcoffee\" Chpk",
+        "address": "Kokand, Shokhrukhobod Street",
+        "phone": "+998 88 577 00 77",
+        "hours": "24/7",
+        "coords": [40.518693, 70.949051]
+      },
+      {
+        "id": 2,
+        "name": "\"Leafcoffee\" Gorod",
+        "address": "Kokand, Turon Street 7",
+        "phone": "+998 90 123 45 67",
+        "hours": "08:00–23:00",
+        "coords": [40.534174, 70.928342]
+      },
+      {
+        "id": 3,
+        "name": "\"Leafcoffee\" Pereval",
+        "address": "Pereval A-373 Highway",
+        "phone": "+998 93 765 43 21",
+        "hours": "09:00–22:00",
+        "coords": [41.111916, 70.504077]
+      },
+      {
+        "id": 4,
+        "name": "\"Leafcoffee\" Tashkent",
+        "address": "Tashkent, Shaykhantakhur district, Kukcha, Small Ring Road, 56",
+        "phone": "+998 93 765 43 21",
+        "hours": "09:00–22:00",
+        "coords": [41.3377, 69.273759]
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2022 LeafCoffee. All rights reserved.",
+    "contact": "📍 Kokand, Uzbekistan | 📞 +998 88 5770077",
+    "follow": "Follow us on "
+  }
+}

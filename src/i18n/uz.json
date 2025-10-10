@@ -1,0 +1,113 @@
+{
+  "header": {
+    "menu": "Menyu",
+    "about_us": "Biz haqimizda",
+    "restaurants": "Restoranlar",
+    "contacts": "Aloqa",
+    "every_day":"Har kuni"
+  },
+  "hero": {
+    "title": "Qahvaxona",
+    "subtitle": "Sizning qahva maskaningiz",
+    "description": "Sevgi bilan tayyorlangan premium qahva va desertlar",
+    "buttons": {
+      "view_menu": "Menyuni ko‘rish",
+      "order_now": "Buyurtma berish"
+    }
+  },
+  "experience": {
+    "title": "Bu shunchaki qahva emas — bu tajriba",
+    "description": "Yoqimli muhitni his eting, baristalarimiz ishini tomosha qiling va yangi tayyorlangan qahvadan zavqlaning.",
+    "tags": ["Barista", "Interyer", "Qahvaxonadagi muhit"]
+  },
+  "reviews": {
+    "title": "Mijozlar fikri",
+    "subtitle": "Mehmonlarimiz biz haqimizda nima deyishadi",
+    "items": [
+      {
+        "name": "Anastasiya",
+        "city": "Toshkent",
+        "text": "Qahvasi juda ajoyib! Muhiti esa juda yoqimli."
+      },
+      {
+        "name": "Jamshid",
+        "city": "Qo‘qon",
+        "text": "Eng mazali desertlarni aynan shu yerda tatib ko‘rganman."
+      },
+      {
+        "name": "Leyla",
+        "city": "Mehmon",
+        "text": "Menga ularning kapuchinosi juda yoqadi. Ta’mi tabiiy va yangi."
+      }
+    ]
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "experience": "3+ yillik tajriba",
+    "description": "Biz ishonamizki, bir finjon yaxshi qahva va mazali desert butun kunga kayfiyat va ilhom bag‘ishlashi mumkin. Shu sababli biz har bir taom va ichimlikni sevgi bilan, faqat tabiiy ingredientlardan tayyorlaymiz.",
+    "Mission": "Bizning missiyamiz",
+    "mission": "Biz faqat tanlab olingan ingredientlardan qahva va desertlar tayyorlaymiz.",
+    "Team": "Bizning jamoamiz",
+    "team": "O‘z ishini sevuvchi tajribali baristalar va konditerlar jamoasi.",
+    "Values": "Bizning qadriyatlarimiz",
+    "values": "Sifat, qulaylik va har bir mehmon uchun e’tibor."
+  },
+  "restaurants": {
+    "title": "Restoranlar",
+    "question": "Savolingiz bormi? Bizga yozing yoki qahvaxonamizga tashrif buyuring.",
+    "address": "Manzil",
+    "phones": "Telefon",
+    "email": "Elektron pochta",
+    "hours": "Ish vaqti",
+    "locations": [
+      "Qo‘qon, Shokhruxobod ko‘chasi",
+      "Qo‘qon, Turon ko‘chasi, 7",
+      "Pereval, A373 yo‘li",
+      "Toshkent, Shayxontohur tumani, Kukcha, Kichik halqa yo‘li, 56"
+    ]
+  },
+  "contact": {
+    "title": "Biz bilan bog‘laning",
+    "phonelabel":"Telefon raqami:",
+    "hours": "Ish vaqti",
+    "locations": [
+      {
+        "id": 1,
+        "name": "\"Leafcoffee\" Chpk",
+        "address": "Qo‘qon, Shokhruxobod ko‘chasi",
+        "phone": "+998 88 577 00 77",
+        "hours": "24/7",
+        "coords": [40.518693, 70.949051]
+      },
+      {
+        "id": 2,
+        "name": "\"Leafcoffee\" Gorod",
+        "address": "Qo‘qon, Turon ko‘chasi, 7",
+        "phone": "+998 90 123 45 67",
+        "hours": "08:00–23:00",
+        "coords": [40.534174, 70.928342]
+      },
+      {
+        "id": 3,
+        "name": "\"Leafcoffee\" Pereval",
+        "address": "Pereval, A-373 yo‘li",
+        "phone": "+998 93 765 43 21",
+        "hours": "09:00–22:00",
+        "coords": [41.111916, 70.504077]
+      },
+      {
+        "id": 4,
+        "name": "\"Leafcoffee\" Toshkent",
+        "address": "Toshkent, Shayxontohur tumani, Kukcha, Kichik halqa yo‘li, 56",
+        "phone": "+998 93 765 43 21",
+        "hours": "09:00–22:00",
+        "coords": [41.3377, 69.273759]
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2022 LeafCoffee. Barcha huquqlar himoyalangan.",
+    "contact": "📍 Qo‘qon, O‘zbekiston | 📞 +998 88 5770077",
+    "follow": "Bizni kuzatib boring"
+  }
+}
