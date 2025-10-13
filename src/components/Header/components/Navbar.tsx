@@ -188,7 +188,7 @@ const Navbar = () => {
                   onClick={() => setOpen(true)}
                 />
                 <Drawer
-                  title={<span className="text-2xl">Menu</span>}
+                  title={<span className="text-2xl">{t("menu")}</span>}
                   placement="left"
                   onClose={onClose}
                   open={open}
@@ -200,28 +200,28 @@ const Navbar = () => {
                       onClick={onClose}
                       style={{ color: "black" }}
                     >
-                      Menu
+                      {t("menu")}
                     </Link>
                     <Link
                       href={`/${locale}#about`}
                       onClick={onClose}
                       style={{ color: "black" }}
                     >
-                      About us
+                      {t("about_us")}
                     </Link>
                     <Link
                       href={`/${locale}#restaurants`}
                       onClick={onClose}
                       style={{ color: "black" }}
                     >
-                      Restaurants
+                      {t("restaurants")}
                     </Link>
                     <Link
                       href={`/${locale}/contact`}
                       onClick={onClose}
                       style={{ color: "black" }}
                     >
-                      Contact
+                      {t("contacts")}
                     </Link>
                   </div>
                 </Drawer>

@@ -17,7 +17,7 @@ export default function Contacts() {
 
   return (
     <section className=" py-30">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-12 flex flex-col items-center gap-5">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
            {t("title")}
@@ -30,7 +30,7 @@ export default function Contacts() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6 h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-amber-600 scrollbar-track-gray-200 rounded-xl p-2">
+          <div className="space-y-6 h-[400px] lg:h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-amber-600 scrollbar-track-gray-200 rounded-xl p-2">
             {locations.map((loc) => (
               <div
                 key={loc.id}
@@ -63,7 +63,7 @@ export default function Contacts() {
             ))}
           </div>
 
-          <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-md">
+          <div className="w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
             <YandexMap center={selectedLocation?.coords} />
           </div>
         </div>
