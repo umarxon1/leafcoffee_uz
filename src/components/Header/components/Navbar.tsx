@@ -75,9 +75,7 @@ const Navbar = () => {
               </Link>
 
               <ul
-                className={`flex gap-5 font-[16px] max-md1:hidden ${
-                  scrolled || isContactPage ? "text-gray-700" : "text-white"
-                }`}
+                className="flex gap-5 font-[16px] max-md1:hidden text-white"
               >
                 <li>
                   <Link
@@ -159,16 +157,13 @@ const Navbar = () => {
               <div className="flex items-center flex-col max-lg1:hidden">
                 <a
                   href="tel:+998885770077"
-                  className={`font-medium text-[16px] ${
-                    scrolled || isContactPage ? "text-gray-700" : "text-white"
-                  }`}
+                  className="font-medium text-[16px] text-white"
+                
                 >
                   +998 88 577-00-77
                 </a>
                 <span
-                  className={`text-[12px] ${
-                    scrolled || isContactPage ? "text-gray-700" : "text-white"
-                  }`}
+                  className="text-[12px] text-white"
                 >
                   {t("every_day")} 24/7
                 </span>
