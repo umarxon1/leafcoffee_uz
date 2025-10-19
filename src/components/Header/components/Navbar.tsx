@@ -3,6 +3,7 @@ import { MenuOutlined, GlobalOutlined } from "@ant-design/icons";
 import { Drawer, Button, Dropdown, Select } from "antd";
 import { useEffect, useState, useTransition } from "react";
 import Logo from "../../../../public/logo.png";
+import Logo1 from "../../../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -60,7 +61,17 @@ const Navbar = () => {
         <header className="container">
           <nav className="p-5 flex items-center justify-between">
             <div className="flex items-center gap-25 max-xl1:gap-10">
-              <Link href={`/${locale}`}>
+              <Link className="flex gap-2 items-center" href={`/${locale}`}>
+              <Image
+                  src={Logo1}
+                  alt="Logo"
+                  height={70}
+                  className={` max-sm1:max-w-[140px] cursor-pointer object-contain h-[40px] transform-transition ease-in duration-260 ${
+                    scrolled || isContactPage
+                      ? " h-[70px]"
+                      : " h-[90px]"
+                  }`}
+                />
                 <Image
                   src={Logo}
                   alt="Logo"
