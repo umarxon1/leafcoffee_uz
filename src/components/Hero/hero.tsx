@@ -1,5 +1,6 @@
 import Image from "next/image";
-import LeafStore from "../../../public/chpkleaf.jpg"
+import LeafStore from "../../../public/chpkleaf.webp"
+import LeafStore2 from "../../../public/tashkentLeaf.webp"
 import Link from "next/link";
 import {  getTranslations } from 'next-intl/server';
 import { Route } from "next";
@@ -14,7 +15,13 @@ export default async function Hero({ locale }: LocalType) {
         src={LeafStore}
         alt="Coffee shop"
         fill
-        className="object-cover opacity-70"
+        className="object-cover opacity-70 max-md1:hidden"
+      />
+        <Image
+        src={LeafStore2}
+        alt="Coffee shop"
+        fill
+        className="object-cover opacity-70 hidden max-md1:inline"
       />
       <div className="relative z-10">
         <h1 className="text-5xl font-bold mb-4">{t("title")}</h1>
