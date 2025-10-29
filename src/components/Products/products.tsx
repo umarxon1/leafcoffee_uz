@@ -1,11 +1,15 @@
 import React from 'react'
 import { products } from "../../data/db"
 import Image from 'next/image'
-const Products = () => {
+import { getTranslations } from 'next-intl/server';
+import { LocalType } from '@/types/type';
+export default async function Products({locale}:LocalType) {
     
+  const t = await getTranslations({ locale, namespace: "header" });
+
   return (
     <div className='flex flex-col items-center gap-10 mb-[70px] mt-[30px]'>
-        <h2 className='text-[32px] max-md:text-[26px] max-sm:text-[20px]'>Top</h2>
+        <h2 className='text-[32px] max-md:text-[26px] max-sm:text-[20px]'>{t("menu")}</h2>
     <div className='container grid grid-cols-4 gap-8 max-lg1:grid-cols-3 max-md:grid-cols-2 max-sm1:gap-4'>
         {products.map((el,i)=> {
             return(
@@ -25,5 +29,3 @@ const Products = () => {
     </div>
   )
 }
-
-export default Products

@@ -26,10 +26,6 @@ const page = () => {
                           </div>
                          <div className='px-[20px] pb-[20px] flex flex-col '>
                            <h3 className='h-[60px] text-[18px] text-[#371C06] hover:underline cursor-pointer max-lg1:text-[14px] max-sm1:text-[12px]'>{el.title}</h3>
-                          <p className=' mb-[20px] h-[65px] text-[14px] text-[#ACACAC] max-lg1:text-[10px] max-md:hidden'>{el.description.slice(0,60)}...</p>
-                       <div className='flex items-center justify-between max-sm1:flex-col max-sm1:gap-3 max-sm1:items-start'>
-                             <span className=' text-[#371C06] text-[18px] max-lg1:text-[16px]  max-sm1:text-[14px]'>{el.price} сум</span>
-                       </div>
                          </div>
                           </div>
                       </div>
